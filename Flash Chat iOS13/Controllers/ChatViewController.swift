@@ -30,6 +30,7 @@ class ChatViewController: UIViewController, UISearchBarDelegate{
         searchBar.delegate = self
         navigationItem.titleView =  searchBar
         searchBar.placeholder = "Search Messages"
+        searchBar.smartInsertDeleteType = .yes
         tableView.register(UINib(nibName: K.cellNibName, bundle: nil), forCellReuseIdentifier: K.cellIdentifier)
         loadMessages()
         Messages.messages = Messages.messages1
