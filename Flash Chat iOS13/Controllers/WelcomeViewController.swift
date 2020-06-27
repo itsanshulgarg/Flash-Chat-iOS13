@@ -17,7 +17,7 @@ class WelcomeViewController: UIViewController {
         super.viewWillAppear(animated)
         navigationController?.isNavigationBarHidden = true
         if userDefault.bool(forKey: "loggedIn") == true{
-            performSegue(withIdentifier: "LoginToChat", sender: self)
+            performSegue(withIdentifier: "show", sender: self)
         }
         else{
             
